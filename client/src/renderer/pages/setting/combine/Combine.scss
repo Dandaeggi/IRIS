@@ -1,0 +1,221 @@
+.combine-command-container {
+  height: 62vh;
+  width: 50vw;
+  overflow-x: hidden;
+  padding-right: 0.25rem;
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 10%;
+    background-color: rgb(102, 102, 102);
+    /* 스크롤바 둥글게 설정    */
+    border-radius: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.combine-box {
+  width: 50vw;
+  margin: auto;
+
+  .makecombine-orders-container {
+    display: flex;
+    justify-content: center;
+
+    .orders-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      height: 200px;
+      border-radius: 8px;
+
+      p {
+        margin: 8px;
+      }
+
+      .order-hor {
+        width: 100%;
+        height: 2px;
+        background-color: #c2c2c2;
+      }
+    }
+    .order-color1 {
+      border: 2px solid #8eceff;
+    }
+    .order-color2 {
+      border: 2px solid #ffa2a2;
+    }
+    .order-color3 {
+      border: 2px solid #59ff5f;
+    }
+  }
+  .line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .horline {
+      background-color: #c2c2c2;
+      width: 69%;
+      height: 2px;
+    }
+    .top-verline-box {
+      display: flex;
+      justify-content: space-between;
+      .verline {
+        background-color: #c2c2c2;
+        width: 2px;
+        height: 30px;
+      }
+    }
+    .verline-box {
+      display: flex;
+      width: 69%;
+      justify-content: center;
+
+      .verline1 {
+        background-color: #c2c2c2;
+        width: 2px;
+        height: 30px;
+      }
+      .verline2 {
+        background-color: #c2c2c2;
+        width: 2px;
+        height: 30px;
+      }
+      .verline3 {
+        background-color: #c2c2c2;
+        width: 2px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.combine-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1vh;
+  font-size: 1.5rem;
+  border-bottom: solid 0.125rem;
+  border-radius: 0.125rem;
+}
+
+.combine-command {
+  background: #fbfbfb;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  border-radius: 0.5rem;
+  padding: 2vh;
+  overflow: hidden;
+
+  .combine-command-box {
+    width: 40vw;
+
+    .command-title {
+      font-size: 1.25rem;
+    }
+
+    .command-orders {
+      color: #8d8d8d;
+      overflow: hidden;
+      word-break: break-all;
+      display: -webkit-flex;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+
+      .command-orders-tags {
+        overflow: hidden;
+        margin: 1%;
+      }
+    }
+  }
+}
+
+.combine-button-icon {
+  border-radius: 0.5rem;
+
+  &.edit {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    background: #d7d7d7;
+  }
+}
+
+.combine-input {
+  width: 30vw;
+
+  input {
+    margin-top: 1rem;
+    border: 1px solid #dedede;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    align-self: center;
+    box-shadow: 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+    width: 30vw;
+    padding: 0.5rem;
+
+    &:focus {
+      outline: 0;
+      border: 1px solid #727272;
+    }
+  }
+}
+
+.combine-edit-box {
+  margin-top: 2vh;
+  border-radius: 0.5rem;
+
+  .my-startword-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .command-combine {
+      text-align: center;
+    }
+  }
+
+  .startword-title {
+    font-size: 2rem;
+  }
+
+  input {
+    width: 48vw;
+    height: 4vh;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+
+    border: 1px solid #dedede;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    align-self: center;
+    box-shadow: 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+
+    &::placeholder {
+      font-size: 1rem;
+    }
+    &:focus {
+      outline: 0;
+      border: 1px solid #727272;
+    }
+  }
+  .edit-combine {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.edit-combine {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

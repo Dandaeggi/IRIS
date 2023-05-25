@@ -1,0 +1,95 @@
+.setting-startword-box {
+  width: 50vw;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.setting-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1vh;
+  font-size: 1.5rem;
+  border-bottom: solid 0.125rem;
+  border-radius: 0.125rem;
+}
+
+.my-now-box {
+  background: #f2f4fe;
+  margin-top: 2vh;
+  border-radius: 0.5rem;
+  padding: 2vh;
+
+  .my-startword-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .startword-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  input {
+    width: 30vw;
+    height: 4vh;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+
+    border: 1px solid #dedede;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    align-self: center;
+    box-shadow: 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+
+    &::placeholder {
+      font-size: 1rem;
+    }
+    &:focus {
+      outline: 0;
+      border: 1px solid #727272;
+    }
+  }
+}
+
+.setting-startword {
+  text-align: start;
+}
+
+.mic-img {
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../../../../../assets/Images/small_mic.png");
+  background-color: #7080bb;
+  border-radius: 2rem;
+}
+
+.startword-stt {
+  font-size: 2.5rem;
+}
+
+.edit-startword {
+  text-align: end;
+}
+
+.edit-startword-btn {
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  transition: all 0.1s linear;
+  width: 7vw;
+  height: 6vh;
+  font-size: 1rem;
+  margin-left: 2vw;
+  cursor: pointer;
+  background: #d7d7d7;
+
+  &:hover {
+    background: #c1c1c1;
+  }
+}

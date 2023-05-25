@@ -1,0 +1,7 @@
+JWT_SECRETKEY = 
+ACCESS_TOKEN_SECRETKEY = VlwEyVBsYt9V7zq57TejMnVUyzblYcfPQye08f7MGVA9XkHa
+REFRESH_TOKEN_SECRETKEY = qweaEyVBsdzcsdzVlwsYasdzxcqwt9V7zq57TexqwMnVUyzb
+SECURITY_PASSWORD = 1234
+MAIL_EMAIL = laboratory6889@gmail.com
+MAIL_PASSWORD = cnemnkkjywhjckfy
+

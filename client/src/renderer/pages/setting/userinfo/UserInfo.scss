@@ -1,0 +1,129 @@
+.setting-userInfo-box {
+  width: 50vw;
+  // border: 1px solid black;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.setting-userInfo {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+
+  .nickname-label {
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .user-nickname {
+    font-size: 1.5rem;
+  }
+  .password-label {
+    font-size: 1rem;
+    text-align: start;
+  }
+}
+
+.setting-edit-info {
+  // display: flex;
+  // justify-content: space-evenly;
+  // align-items: center;
+  cursor: pointer;
+
+  &.double-check {
+    margin-top: 1rem;
+  }
+}
+
+.material-textfield {
+  position: relative;
+}
+
+.material-textfield label {
+  position: absolute;
+  font-size: 1rem;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: gray;
+  padding: 0 0.3rem;
+  margin: 0 0.5rem;
+  transition: 0.1s ease-out;
+  transform-origin: left top;
+  pointer-events: none;
+}
+
+.edit-input {
+  width: 25vw;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1rem 0.7rem;
+  color: black;
+  transition: 0.1s ease-out;
+
+  &:focus {
+    border-color: #4056a4;
+  }
+
+  &:focus + label {
+    color: #4056a4;
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+  }
+
+  &:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+  }
+}
+
+.setting-modal-content {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/////////////////////////////////////////////////
+.setting-password-box {
+  width: 50vw;
+  // border: 1px solid black;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.setting-userInfo {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+
+  .nickname-label {
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .user-nickname {
+    font-size: 1.5rem;
+  }
+}
+
+.setting-edit-info {
+  // display: flex;
+  // justify-content: space-evenly;
+  // align-items: center;
+  cursor: pointer;
+
+  &.double-check {
+    margin-top: 1rem;
+  }
+}
+.formCheckPassword {
+  display: flex;
+  margin-top: 1vh;
+
+  color: red;
+}

@@ -1,0 +1,94 @@
+.Guidebox {
+  position: fixed;
+  width: 85vw;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .skip {
+    position: absolute;
+    right: 1vw;
+    font-size: 3vw;
+    color: #102c8d;
+    transition: 0.3s;
+
+    &:hover {
+      // border: 1px solid #102c8d;
+      // border-radius: 30%;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  .h1Title {
+    text-align: center;
+  }
+  .h2Title {
+    text-align: center;
+  }
+  .h2Title span {
+    display: block;
+  }
+  .pTitle {
+    text-align: center;
+  }
+  .Guideimage1 {
+    position: absolute;
+    width: 50%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Guideimage2 {
+    position: absolute;
+    width: 36vw;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Leftbox {
+    position: absolute;
+    display: flex;
+    width: 8vw;
+    height: 4vh;
+    top: 95%;
+    left: 0%;
+    transition: transform 0.2s;
+    align-items: center;
+    cursor: pointer;
+
+    .Ltitle {
+      margin-left: 1vw;
+      font-size: 2vw;
+      color: #102c8d;
+    }
+    .Larrow {
+      width: 1.5vw;
+    }
+  }
+  .Rightbox {
+    position: absolute;
+    display: flex;
+    width: 8vw;
+    height: 4vh;
+    right: 3%;
+    top: 95%;
+    transition: transform 0.2s;
+    align-items: center;
+    cursor: pointer;
+    .Rarrow {
+      width: 1.5vw;
+    }
+    .Rtitle {
+      margin-right: 1vw;
+      font-size: 2vw;
+      color: #102c8d;
+    }
+  }
+  .Leftbox:hover,
+  .Rightbox:hover {
+    transform: scale(1.1);
+  }
+}

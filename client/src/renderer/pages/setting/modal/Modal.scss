@@ -1,0 +1,59 @@
+.modal-container {
+  width: 45vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50vh;
+  left: 20vw;
+  animation: modal-show 0.3s;
+}
+
+.dialog-box {
+  width: 45vw;
+  height: 45vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 30px rgba(30, 30, 30, 0.185);
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 10000;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.modal-btn {
+  width: 10vw;
+  height: 3.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.1s linear;
+  cursor: pointer;
+
+  &.form {
+    margin: 2rem 0rem;
+    height: 5vh;
+  }
+  &:hover {
+    background: #bababa;
+  }
+}

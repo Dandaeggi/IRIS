@@ -1,0 +1,32 @@
+.edit-custom {
+  text-align: end;
+}
+
+.edit-custom-btn {
+  margin-top: 2vh;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  transition: all 0.1s linear;
+  width: 7vw;
+  height: 5vh;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &.before {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover {
+    background: #d2d2d2;
+  }
+}
+
+.custom-close {
+  position: absolute;
+  left: 90vw;
+  cursor: pointer;
+}

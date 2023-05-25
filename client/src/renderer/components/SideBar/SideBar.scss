@@ -1,0 +1,36 @@
+.sidebar {
+  background: #ececec;
+}
+
+.sidebar-menu-item {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #000000;
+  cursor: pointer;
+
+  &.selected {
+    background: #ffffff;
+    color: #000000;
+    font-weight: 600;
+
+    &:hover {
+      background: white;
+      color: #000000;
+    }
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+  }
+}
+
+.sidebar-logo {
+  width: 12vw;
+  margin-top: 2vh;
+}

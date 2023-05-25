@@ -1,0 +1,63 @@
+::selection {
+  background: var(--selection-bgcolor);
+  color: var(--selection-color);
+}
+
+@font-face {
+  font-family: "pretendard";
+  src: url("../../fonts/PretendardVariable.ttf");
+}
+
+* {
+  font-family: "pretendard";
+}
+
+// ::-webkit-scrollbar {
+//   width: var(--scroll-width);
+
+//   &-track {
+//     background: var(--scroll-track-bgcolor);
+//   }
+
+//   &-thumb {
+//     background: var(--scroll-thumb-bgcolor);
+//   }
+
+//   &-thumb:hover {
+//     background: var(--scroll-thumb-hover-bgcolor);
+//   }
+// }
+
+html,
+body,
+#app {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-size: var(--app-font-size);
+  font-family: var(--app-font-family);
+  color: var(--app-color);
+  background: var(--app-bgcolor);
+  line-height: 1.5;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  user-select: none;
+
+  &.has-border {
+    border: var(--app-border-color);
+  }
+}
+
+input {
+  border: 1px solid #29b6f280;
+}
+
+button {
+  border: none;
+}

@@ -1,0 +1,113 @@
+.select2-box {
+  position: relative;
+  width: 30vw;
+  padding: 1vh;
+  border: 1px solid #dedede;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+  align-self: center;
+  box-shadow: 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+  // z-index: 9999;
+  cursor: pointer;
+
+  &::before {
+    content: "⌵";
+    position: absolute;
+    top: 0.25rem;
+    right: 1rem;
+    color: #49c181;
+    font-size: 1.25rem;
+  }
+
+  > label {
+    font-size: 1rem;
+    margin-left: 0.25rem;
+    text-align: center;
+  }
+
+  &.custom {
+    // margin-top: 3vh;
+
+    &::before {
+      content: "⌵";
+      position: absolute;
+      top: 0.25rem;
+      right: 1rem;
+      color: #49c181;
+      font-size: 1.25rem;
+    }
+
+    > label {
+      font-size: 1rem;
+      margin-left: 0.25rem;
+      text-align: center;
+    }
+  }
+}
+
+.select2-options {
+  position: absolute;
+  list-style: none;
+  top: 4.5vh;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #dedede;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+  background: white;
+  color: #000000;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out 0.15s;
+  z-index: 100000;
+  // 스크롤
+  //   overflow: auto;
+
+  &.show {
+      opacity: 1;
+      visibility: visible;
+      transition: ease-in-out 0.15s;
+  
+      &.open {
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 35vh;
+      }
+    }
+  > li {
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.2s ease-in;
+
+    &.selected-option {
+      background-color: #d2d2d2;
+
+      &:hover {
+        background-color: #d2d2d2;
+      }
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+  }
+
+  /*스크롤바*/
+  //   -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  //   scrollbar-width: none; /* 파이어폭스 */
+  //   &::-webkit-scrollbar {
+  //     display: none; /* 크롬, 사파리, 오페라, 엣지 */
+  //   }
+}
+
+.select2-backdrop {
+  &.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+  }
+}

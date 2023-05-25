@@ -1,0 +1,22 @@
+.edit-custom {
+  text-align: right;
+}
+
+.edit-combine-btn {
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  transition: all 0.1s linear;
+  width: 7vw;
+  height: 5vh;
+  font-size: 1rem;
+
+  &:hover {
+    background: #d2d2d2;
+  }
+}
+
+.inputordername {
+  height: 50px;
+}

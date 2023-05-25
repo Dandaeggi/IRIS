@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "pretendard";
+  src: url("../../../fonts/PretendardVariable.ttf");
+}
+
+* {
+  font-family: "pretendard";
+}
+
+#response {
+  font-size: var(--app-font-size);
+  font-family: var(--app-font-family);
+}
+.Response {
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - 5vh);
+  top: calc(50% + 25px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--app-font-family);
+
+  .vector {
+    width: 100vw;
+
+    border: solid 1px rgb(230, 230, 250);
+  }
+  .message {
+    display: flex;
+    margin-top: 8vh;
+    font-family: var(--app-font-family);
+  }
+}

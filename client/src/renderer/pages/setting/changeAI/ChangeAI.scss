@@ -1,0 +1,76 @@
+.setting-AI-box {
+  width: 50vw;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.now-AI {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.setting-select-AI {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2vh;
+}
+
+.setting-AI-title {
+  font-size: 1.1rem;
+}
+.setting-AI-content {
+  font-size: 1rem;
+}
+
+.setting-select-item {
+  display: grid;
+}
+
+.setting-AI-container {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  // grid-template-rows: 1fr 6fr 1fr;
+  width: 20vw;
+  height: 30vh;
+  padding: 0.5rem;
+  border: 1px solid #ececec;
+  border-radius: 0.5rem;
+  background: #f8f8f8;
+  cursor: pointer;
+
+  transition: all 0.1s linear;
+  &:hover {
+    // border: 2px solid #747474;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  &.selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.setting-AI-img {
+  width: 20vw;
+  margin: 1rem 0;
+  // height: 20vh;
+}
+
+.setting-AI-logo {
+  width: 15vw;
+}
+
+.setting-AI-btn {
+  width: 10vw;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 3vh;
+  font-size: 1rem;
+  transition: all 0.1s linear;
+  cursor: pointer;
+
+  &:hover {
+    background: #bababa;
+  }
+}

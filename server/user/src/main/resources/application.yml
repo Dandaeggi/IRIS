@@ -1,0 +1,43 @@
+
+server:
+  port: 9000
+
+spring:
+  application:
+    name: user
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://j8b102.p.ssafy.io:3306/iris?serverTimezone=Asia/Seoul
+    username: root
+    password: ehgud
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+#  security:
+#    user:
+#      name: user
+#      password: 1234
+#  access:
+#    secret: VlwEyVBsYt9V7zq57TejMnVUyzblYcfPQye08f7MGVA9XkHa
+#    expiration_time: 3600000
+#  refresh:
+#    secret: qweaEyVBsdzcsdzVlwsYasdzxcqwt9V7zq57TexqwMnVUyzb
+#    expiration_time: 86400000
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: laboratory6889@gmail.com
+    password: cnemnkkjywhjckfy
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 180000
+          starttls:
+            enable: true
+jwt:
+  secret: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXByb2plY3QtYjEwNC1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtUzA4UDEyQjEwNC9wcm9qZWN0L2NvbS5zc2FmeS5saXZlX1NFQ1JFVF9LRVlfQ09ERQo=c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXByb2plY3QtYjEwNC1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtUzA4UDEyQjEwNC9wcm9qZWN0L2NvbS5zc2FmeS5saXZlX1NFQ1JFVF9LRVlfQ09ERQo=

@@ -1,0 +1,118 @@
+.select-box {
+  position: relative;
+  width: 48vw;
+  padding: 0.8vw;
+  border: 1px solid #dedede;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  align-self: center;
+  box-shadow: 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+  // z-index: 9999;
+  cursor: pointer;
+
+  &::before {
+    content: "⌵";
+    position: relative;
+    left: 45vw;
+    color: #49c181;
+    font-size: 1.25rem;
+  }
+
+  > label {
+    position: relative;
+    font-size: 1rem;
+    // margin-left: 0.25rem;
+    text-align: center;
+  }
+
+  &.custom {
+    // margin-top: 3vh;
+
+    &::before {
+      content: "⌵";
+      position: relative;
+      left: 45vw;
+      color: #49c181;
+      font-size: 1.25rem;
+    }
+
+    > label {
+      font-size: 1rem;
+      margin-left: 0.25rem;
+      text-align: center;
+    }
+  }
+}
+
+.select-options {
+  position: absolute;
+  list-style: none;
+  top: 5vh;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #dedede;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+  background: white;
+  color: #000000;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out 0.15s;
+  z-index: 100000;
+  overflow: auto;
+
+  // 스크롤
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transition: ease-in-out 0.15s;
+    border-radius: 0.5rem;
+    &.custom-add {
+      overflow: scroll;
+      overflow-x: hidden;
+      height: 40vh;
+    }
+  }
+
+  > li {
+    font-size: 1rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    // transition: background-color 0.2s ease-in;
+
+    &.selected-option {
+      background-color: #d2d2d2;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background-color: #d2d2d2;
+        border-radius: 0.5rem;
+      }
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+      border-radius: 0.5rem;
+    }
+  }
+
+  /*스크롤바*/
+  //   -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  //   scrollbar-width: none; /* 파이어폭스 */
+  //   &::-webkit-scrollbar {
+  //     display: none; /* 크롬, 사파리, 오페라, 엣지 */
+  //   }
+}
+
+.select-backdrop {
+  &.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+  }
+}
